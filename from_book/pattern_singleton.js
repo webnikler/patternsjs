@@ -41,7 +41,7 @@ export class Logger {
     }
   }
 
-  getInstance() {
+  static getInstance() {
     if (!Logger.#loggerIntsance) {
       Logger.#loggerIntsance = new Logger('warn', console);
     }
